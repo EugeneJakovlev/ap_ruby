@@ -24,7 +24,7 @@ module ItemContainer
     end
   
     def delete_invalide_items
-      @items.sdelete_if { |i| i.price.nil? }
+      @items.delete_if { |i| i.price.nil? }
     end
   
 
